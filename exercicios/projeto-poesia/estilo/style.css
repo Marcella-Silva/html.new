@@ -1,41 +1,67 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Fredoka One', cursive;
+    --fonte3: 'Neucha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html,body {
     min-height: 100vh;
     background-color: azure;
+    font-family: var(--fonte1);
+    
 }
 header {
     background-color: black;
     color: white;
     text-align: center;
+    
 }
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 6vw;
 
 }
 header > p {
+    padding-top: 50px;
     padding-bottom: 50px;
+    font-size: 2vw;
 }
-footer a {
-    color: white;
+
+header a, footer a {
     text-decoration: none;
+    color: white;
     font-weight: bolder;
 }
-footer a:hover {
+
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-style: italic;
+    font-size: 3.5vw;
+}
 
+section > p {
+    padding-bottom: 2em;
 }
 section.normal {
     background-color: white;
@@ -44,12 +70,34 @@ section.normal {
 section.imagem {
     background-color: rgb(46, 42, 42);
     color: white;
+    text-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.233);
+    width: 600px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.452);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.493);
+    background-size: cover;
+   
+}
+section#img01 {
+    background-image: url('../estrada.g.jpg');
+   
 }
 
+section#img02 {
+    background-image: url('../joaninha.g.jpg');
+    background-position: center center;
+    
+}
+
+section#img03 {
+    background-image: url('../book.g.jpg');
+    background-repeat: no-repeat;
+    
+}
 footer {
     background-color: black;
     color: white;
