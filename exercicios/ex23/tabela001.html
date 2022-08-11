@@ -29,6 +29,10 @@
         td.num {
             text-align: right;
         }
+        tbody > tr:nth-child(2n) {
+              background-color: lightgray;
+            
+        }
         
     </style>
 </head>
@@ -38,12 +42,12 @@
         <thead>
             <tr>
                 <th class="tit">Estado</th>
-                <th class="tit">População</th>
-                <th class="tit">% da População total</th>
+                <th class="tit" style="width: 50px;">População</th>
+                <th class="tit" style="width: 50px">% da População total</th>
             </tr>
         </thead>
-        <body>
-            <tr>
+        
+        <tr>
                 <td>Espírito Santo</td>
                 <td class="num">3 514 952</td>
                 <td class="num">3,4%</td>
