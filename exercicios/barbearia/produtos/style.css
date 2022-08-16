@@ -1,0 +1,28 @@
+@charset "UFT-8"
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightgray;
+
+}
+
+header {
+    background-color: rgba(128, 128, 128, 0.548);
+    min-height: 150px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+}
