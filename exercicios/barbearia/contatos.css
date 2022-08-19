@@ -1,0 +1,94 @@
+@charset "UFT-8"
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: lightgray;
+
+}
+
+header {
+    background-color: rgba(128, 128, 128, 0.548);
+    
+}
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+    nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: rgba(243, 161, 10, 0.288);
+    text-decoration: underline;
+}
+
+main {
+    width: 940px;
+    margin: auto;
+}
+
+form {
+    margin: 40px 0;
+}
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1s;
+    border: 0ch;
+    cursor: pointer;
+
+}
+.enviar:hover {
+    background-color: darkorange;
+}
+
+footer {
+        text-align: center;
+        background-color: rgb(26, 24, 24);
+    
+}
+.texto {
+        color: white;
+        font-size: 13px;
+        margin-top: 15px;
+}
